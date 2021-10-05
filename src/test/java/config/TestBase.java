@@ -28,8 +28,6 @@ public class TestBase {
             Configuration.startMaximized = true;
 //            Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub/";
             Configuration.remote = format("https://%s:%s@%s", credentials.login(), credentials.password(),credentials.url());
-
-            String browser = System.getProperty("browser", "chrome");
     }
 
     @AfterEach

@@ -21,7 +21,7 @@ public class PracticeFormTest extends config.TestBase {
             mobileNumber = fake.number().digits(10),
             year = String.valueOf(fake.number().numberBetween(1950, 2000)),
             month = fake.options().option("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"),
-            day = String.valueOf(fake.number().numberBetween(1, 28)),
+            day = String.valueOf(fake.number().numberBetween(10, 20)),
             subject = fake.options().option("English", "Maths", "Physics"),
             address = fake.address().fullAddress(),
             hobbies = fake.options().option("Sports", "Reading", "Music"),
