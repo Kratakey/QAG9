@@ -1,13 +1,14 @@
 package tests;
 
 import com.github.javafaker.Faker;
+import config.TestBase;
 import org.junit.jupiter.api.Test;
 import pages.StudentRegistrationForm;
 
 import java.util.Locale;
 
 
-public class PracticeFormTest extends config.TestBase {
+public class PracticeFormTest extends TestBase {
 
     StudentRegistrationForm studentRegistrationForm = new StudentRegistrationForm();
 

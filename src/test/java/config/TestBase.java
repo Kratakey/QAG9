@@ -10,6 +10,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+
 import static java.lang.String.format;
 
 
@@ -28,7 +29,8 @@ public class TestBase {
             Configuration.startMaximized = true;
 //            Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub/";
             Configuration.remote = format("https://%s:%s@%s", credentials.login(), credentials.password(),System.getProperty("url"));
-            //gradle clean test -Durl=selenoid.autotests.cloud/wd/hub/
+//          gradle clean test -Durl=selenoid.autotests.cloud/wd/hub/
+//          C:\Users\White\.jdks\liberica-11.0.12
     }
 
     @AfterEach
