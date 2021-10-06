@@ -36,12 +36,12 @@ dependencies {
 
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
+    sourceCompatibility = 11
+    targetCompatibility = 11
 }
 
 tasks.withType(Test) {
-//    systemProperty("environment", System.getProperty("environment", "stage")) // preprod, prod
-//
-    systemProperties(System.getProperties())
+
     useJUnitPlatform()
 
     testLogging {
