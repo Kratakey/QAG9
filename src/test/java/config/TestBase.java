@@ -27,7 +27,8 @@ public class TestBase {
             Configuration.browserCapabilities = capabilities;
             Configuration.startMaximized = true;
 //            Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub/";
-            Configuration.remote = format("https://%s:%s@%s", credentials.login(), credentials.password(),credentials.url());
+            Configuration.remote = format("https://%s:%s@%s", credentials.login(), credentials.password(),System.getProperty("url"));
+            //gradle clean test -Durl=selenoid.autotests.cloud/wd/hub/
     }
 
     @AfterEach
